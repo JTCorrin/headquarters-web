@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { env } from '$env/dynamic/public';
+	import { resolve } from '$app/paths';
 	import { Button } from '$lib/components/ui/button/index.js';
 
 	const billingApiUrl = $derived((env.PUBLIC_BILLING_API_URL ?? '').replace(/\/$/, ''));
@@ -39,7 +40,7 @@
 			Run the business without the tab chaos.
 		</p>
 		<p class="text-hq-muted mx-auto mt-4 max-w-lg text-lg leading-relaxed">
-			Start the hosted plan (£10/month) or grab the open-source repo and run it yourself.
+			Start the hosted plan (£10/month) or self-host the source-available repo on your own stack.
 		</p>
 
 		<div class="mx-auto mt-8 flex max-w-md flex-col items-stretch justify-center gap-3 sm:flex-row">
@@ -52,13 +53,11 @@
 				{checkoutBusy ? 'Redirecting…' : 'Start hosted'}
 			</Button>
 			<Button
-				href="https://github.com/JTCorrin/Headquarters"
-				target="_blank"
-				rel="noopener noreferrer"
+				href={resolve('/docs')}
 				variant="outline"
 				class="border-hq-ink/20 text-hq-ink hover:bg-hq-paper-deep h-11 rounded-full px-6"
 			>
-				Get the source
+				Self-host guide
 			</Button>
 		</div>
 		{#if checkoutError}

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { env } from '$env/dynamic/public';
+	import { resolve } from '$app/paths';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { cn } from '$lib/utils.js';
 
@@ -15,14 +16,14 @@
 			name: 'Self-host',
 			price: 'Free',
 			priceSuffix: '',
-			blurb: 'Open source. Run it on your own stack — forever free.',
+			blurb: 'Source-available. Run it on your own stack — forever free.',
 			features: [
 				'Full product, self-hosted',
 				'Unlimited seats on your infra',
 				'You own the data and uptime',
 				'Community updates'
 			],
-			cta: 'Get the source',
+			cta: 'Self-host guide',
 			featured: false
 		},
 		{
@@ -74,7 +75,7 @@
 		<div class="mx-auto max-w-xl text-center">
 			<p class="text-hq-accent-strong text-xs font-semibold tracking-[0.18em] uppercase">Pricing</p>
 			<h2 class="font-display text-hq-ink mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-				Open source free. Hosted when you’d rather not babysit servers.
+				Self-host free. Hosted when you’d rather not babysit servers.
 			</h2>
 			<p class="text-hq-muted mt-4 text-lg">
 				Solopreneurs and small teams shouldn’t need an enterprise quote to stay organized.
@@ -111,13 +112,19 @@
 					</ul>
 					{#if tier.id === 'self-host'}
 						<Button
-							href={githubRepo}
-							target="_blank"
-							rel="noopener noreferrer"
+							href={resolve('/docs')}
 							class="mt-8 w-full rounded-full bg-hq-ink text-hq-paper hover:bg-hq-ink/90"
 						>
 							{tier.cta}
 						</Button>
+						<a
+							href={githubRepo}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-hq-muted hover:text-hq-ink mt-3 block text-center text-sm underline-offset-4 hover:underline"
+						>
+							View source on GitHub
+						</a>
 					{:else}
 						<Button
 							type="button"

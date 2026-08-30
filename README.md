@@ -51,7 +51,7 @@ To refresh the playbook canvas from the CRM app, copy from `crm-project`:
 
 ## Pricing (marketing copy)
 
-- **Self-host** — free, open source → GitHub
+- **Self-host** — free, source-available (Elastic License 2.0) → `/docs`
 - **Hosted** — £10 / license / month (3 seats included, £3 / seat after) → Stripe Checkout via billing API
 
 Set `PUBLIC_BILLING_API_URL` (see `.env.example`) to the Railway `headquarters-billing` origin.

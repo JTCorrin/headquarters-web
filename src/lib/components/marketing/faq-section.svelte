@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	const faqs = [
 		{
 			q: 'Is this for big sales teams?',
@@ -6,7 +8,9 @@
 		},
 		{
 			q: 'What’s free vs paid?',
-			a: 'Self-host is free and open source. Hosted is £10 per license / month with 3 seats included, then £3 per extra seat.'
+			a: 'Self-host is free and source-available under Elastic License 2.0. Hosted is £10 per license / month with 3 seats included, then £3 per extra seat.',
+			showDocsLink: true,
+			docsLabel: 'Read the self-host guide'
 		},
 		{
 			q: 'Do I need Microsoft or Google for email?',
@@ -48,6 +52,15 @@
 						{faq.q}
 					</summary>
 					<p class="text-hq-muted mt-2 max-w-2xl leading-relaxed">{faq.a}</p>
+					{#if 'showDocsLink' in faq && faq.showDocsLink}
+						<p class="mt-2">
+							<a
+								href={resolve('/docs')}
+								class="text-hq-accent-strong text-sm font-medium underline-offset-4 hover:underline"
+								>{faq.docsLabel}</a
+							>
+						</p>
+					{/if}
 				</details>
 			{/each}
 		</div>

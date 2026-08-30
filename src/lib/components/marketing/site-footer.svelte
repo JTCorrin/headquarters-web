@@ -1,24 +1,29 @@
+<script lang="ts">
+	import { resolve } from '$app/paths';
+</script>
+
 <footer class="border-hq-line border-t bg-hq-ink text-hq-paper">
 	<div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
 		<div>
 			<p class="font-display text-2xl font-semibold tracking-tight">Headquarters</p>
 			<p class="mt-3 max-w-xs text-sm leading-relaxed text-white/65">
-				Open-source command room for founders and small teams — pipeline, inbox, money, and
+				Source-available command room for founders and small teams — pipeline, inbox, money, and
 				playbooks.
 			</p>
 		</div>
 		<div>
 			<p class="text-xs font-semibold tracking-[0.16em] text-white/45 uppercase">Product</p>
 			<ul class="mt-3 space-y-2 text-sm text-white/75">
-				<li><a href="#playbooks" class="hover:text-white">Playbooks</a></li>
-				<li><a href="#pipeline" class="hover:text-white">Pipeline</a></li>
-				<li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+				<li><a href={resolve('/#playbooks')} class="hover:text-white">Playbooks</a></li>
+				<li><a href={resolve('/#pipeline')} class="hover:text-white">Pipeline</a></li>
+				<li><a href={resolve('/#pricing')} class="hover:text-white">Pricing</a></li>
+				<li><a href={resolve('/docs')} class="hover:text-white">Docs</a></li>
 			</ul>
 		</div>
 		<div>
 			<p class="text-xs font-semibold tracking-[0.16em] text-white/45 uppercase">Company</p>
 			<ul class="mt-3 space-y-2 text-sm text-white/75">
-				<li><a href="#waitlist" class="hover:text-white">Get started</a></li>
+				<li><a href={resolve('/#waitlist')} class="hover:text-white">Get started</a></li>
 				<li>
 					<a
 						href="https://github.com/JTCorrin/Headquarters"

@@ -11,7 +11,7 @@
 	<title>Headquarters — CRM for founders and small teams</title>
 	<meta
 		name="description"
-		content="Open-source Headquarters for solopreneurs and small teams: pipeline, email, invoices, tasks, and playbook automations in one place."
+		content="Source-available Headquarters for solopreneurs and small teams: pipeline, email, invoices, tasks, and playbook automations in one place."
 	/>
 </svelte:head>
 
