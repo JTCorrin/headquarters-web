@@ -52,7 +52,7 @@
 	</nav>
 
 	<article
-		class="prose prose-neutral max-w-none prose-headings:font-display prose-headings:tracking-tight prose-headings:text-hq-ink prose-p:text-hq-muted prose-li:text-hq-muted prose-strong:text-hq-ink prose-a:text-hq-accent-strong prose-code:text-hq-ink prose-pre:bg-hq-ink prose-pre:text-hq-paper"
+		class="prose prose-neutral max-w-none prose-headings:font-display prose-headings:tracking-tight prose-headings:text-hq-ink prose-p:text-hq-muted prose-li:text-hq-muted prose-strong:text-hq-ink prose-a:text-hq-accent-strong prose-code:rounded prose-code:bg-hq-paper-deep prose-code:px-1.5 prose-code:py-0.5 prose-code:text-hq-ink prose-code:before:content-none prose-code:after:content-none prose-pre:bg-hq-ink prose-pre:text-hq-paper prose-pre:[&_code]:bg-transparent prose-pre:[&_code]:p-0 prose-pre:[&_code]:text-hq-paper"
 	>
 		<header class="not-prose mb-10">
 			<p class="text-hq-accent-strong text-xs font-semibold tracking-[0.18em] uppercase">Docs</p>
