@@ -21,6 +21,10 @@
 			a: 'A visual automation — triggers, waits, emails, tasks, notes — so follow-ups don’t live only in your head when you’re heads-down delivering.'
 		},
 		{
+			q: 'Can AI agents use Headquarters?',
+			a: 'Yes. An org-scoped MCP server at /api/v1/mcp lets agents in Cursor, Claude Desktop, Buzz, and similar hosts work contacts, pipeline, projects, quotes, invoices, and payments with the same API-key permissions as scripts.'
+		},
+		{
 			q: 'Can I start alone and add seats later?',
 			a: 'Yes. Hosted includes three seats; add people at £3 each when you’re ready. Self-host has no seat meter on your own infra.'
 		}

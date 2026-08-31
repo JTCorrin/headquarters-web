@@ -16,6 +16,7 @@
 			<ul class="mt-3 space-y-2 text-sm text-white/75">
 				<li><a href={resolve('/#playbooks')} class="hover:text-white">Playbooks</a></li>
 				<li><a href={resolve('/#pipeline')} class="hover:text-white">Pipeline</a></li>
+				<li><a href={resolve('/#mcp')} class="hover:text-white">MCP agents</a></li>
 				<li><a href={resolve('/#pricing')} class="hover:text-white">Pricing</a></li>
 				<li><a href={resolve('/docs')} class="hover:text-white">Docs</a></li>
 			</ul>

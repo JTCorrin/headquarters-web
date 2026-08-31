@@ -12,6 +12,7 @@
 	import EmailDemo from '$lib/product-demos/email/EmailDemo.svelte';
 	import TimelineDemo from '$lib/product-demos/timeline/TimelineDemo.svelte';
 	import QuoteInvoiceDemo from '$lib/product-demos/money/QuoteInvoiceDemo.svelte';
+	import McpDemo from '$lib/product-demos/mcp/McpDemo.svelte';
 </script>
 
 <HeroSection />
@@ -82,6 +83,20 @@
 	{#snippet demo()}
 		<ProductFrame title="Invoices" floatPhase={2}>
 			<QuoteInvoiceDemo />
+		</ProductFrame>
+	{/snippet}
+</FeatureSection>
+
+<FeatureSection
+	id="mcp"
+	eyebrow="MCP · Agents"
+	title="Let your AI agent work the CRM — not just talk about it."
+	body="Headquarters ships a Model Context Protocol server. Paste an org API key into Cursor, Claude Desktop, or Buzz and agents can create contacts, chase leads, send invoices, and log payments with the same permissions as the product API."
+	reverse
+>
+	{#snippet demo()}
+		<ProductFrame title="MCP · headquarters-crm" floatPhase={0}>
+			<McpDemo />
 		</ProductFrame>
 	{/snippet}
 </FeatureSection>
