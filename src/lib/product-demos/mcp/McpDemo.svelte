@@ -2,10 +2,10 @@
 	const tools = [
 		{ name: 'list_leads', domain: 'Pipeline' },
 		{ name: 'create_task', domain: 'Tasks' },
+		{ name: 'create_campaign', domain: 'Campaigns' },
 		{ name: 'create_quote', domain: 'Quotes' },
 		{ name: 'send_invoice', domain: 'Invoices' },
-		{ name: 'create_payment', domain: 'Payments' },
-		{ name: 'add_timeline_note', domain: 'Timeline' }
+		{ name: 'create_payment', domain: 'Payments' }
 	] as const;
 
 	const transcript = [

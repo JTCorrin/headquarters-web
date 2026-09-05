@@ -2,6 +2,7 @@
 	import { env } from '$env/dynamic/public';
 	import { resolve } from '$app/paths';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import { appLoginUrl } from '$lib/marketing/app.js';
 
 	const billingApiUrl = $derived((env.PUBLIC_BILLING_API_URL ?? '').replace(/\/$/, ''));
 	let checkoutBusy = $state(false);
@@ -40,7 +41,8 @@
 			Run the business without the tab chaos.
 		</p>
 		<p class="text-hq-muted mx-auto mt-4 max-w-lg text-lg leading-relaxed">
-			Start the hosted plan (£10/month) or self-host the source-available repo on your own stack.
+			Start the hosted plan (£10/month) or self-host the source-available repo on your own stack. The
+			app lives at app.headquarters-crm.com.
 		</p>
 
 		<div class="mx-auto mt-8 flex max-w-md flex-col items-stretch justify-center gap-3 sm:flex-row">
@@ -60,6 +62,13 @@
 				Self-host guide
 			</Button>
 		</div>
+		<p class="text-hq-muted mt-4 text-sm">
+			Already have an account?
+			<a
+				href={appLoginUrl}
+				class="text-hq-accent-strong font-medium underline-offset-4 hover:underline">Log in</a
+			>
+		</p>
 		{#if checkoutError}
 			<p class="text-destructive mt-4 text-sm" role="alert">{checkoutError}</p>
 		{/if}

@@ -10,6 +10,7 @@
 	import PlaybookDemo from '$lib/product-demos/playbook/PlaybookDemo.svelte';
 	import PipelineDemo from '$lib/product-demos/pipeline/PipelineDemo.svelte';
 	import EmailDemo from '$lib/product-demos/email/EmailDemo.svelte';
+	import CampaignDemo from '$lib/product-demos/campaigns/CampaignDemo.svelte';
 	import TimelineDemo from '$lib/product-demos/timeline/TimelineDemo.svelte';
 	import QuoteInvoiceDemo from '$lib/product-demos/money/QuoteInvoiceDemo.svelte';
 	import McpDemo from '$lib/product-demos/mcp/McpDemo.svelte';
@@ -61,14 +62,27 @@
 </FeatureSection>
 
 <FeatureSection
+	id="campaigns"
+	eyebrow="Mail-shots"
+	title="Reach a tagged audience without another mailing tool."
+	body="Pick tags, preview who’s sendable, and launch from your mailbox — leads, contacts, and clients in one campaign. Schedule it or send now."
+	reverse
+>
+	{#snippet demo()}
+		<ProductFrame title="Campaigns · Spring outreach" floatPhase={1}>
+			<CampaignDemo />
+		</ProductFrame>
+	{/snippet}
+</FeatureSection>
+
+<FeatureSection
 	id="timeline"
 	eyebrow="Timeline"
 	title="Catch up in one scroll."
 	body="Notes, emails, payments, and meetings in order — so you (or a new hire) can reopen a client without archaeology."
-	reverse
 >
 	{#snippet demo()}
-		<ProductFrame title="Contoso · Timeline" floatPhase={1}>
+		<ProductFrame title="Contoso · Timeline" floatPhase={2}>
 			<TimelineDemo />
 		</ProductFrame>
 	{/snippet}
@@ -79,9 +93,10 @@
 	eyebrow="Quotes & invoices"
 	title="Quote today. Get paid without another tool."
 	body="Send the quote, raise the invoice, chase the balance — same HQ as the relationship. No handoff to a separate billing tab."
+	reverse
 >
 	{#snippet demo()}
-		<ProductFrame title="Invoices" floatPhase={2}>
+		<ProductFrame title="Invoices" floatPhase={0}>
 			<QuoteInvoiceDemo />
 		</ProductFrame>
 	{/snippet}
@@ -92,10 +107,9 @@
 	eyebrow="MCP · Agents"
 	title="Let your AI agent work the CRM — not just talk about it."
 	body="Headquarters ships a Model Context Protocol server. Paste an org API key into Cursor, Claude Desktop, or Buzz and agents can create contacts, chase leads, send invoices, and log payments with the same permissions as the product API."
-	reverse
 >
 	{#snippet demo()}
-		<ProductFrame title="MCP · headquarters-crm" floatPhase={0}>
+		<ProductFrame title="MCP · headquarters-crm" floatPhase={1}>
 			<McpDemo />
 		</ProductFrame>
 	{/snippet}

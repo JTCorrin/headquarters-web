@@ -2,6 +2,9 @@
 	import ProductFrame from '$lib/product-demos/ProductFrame.svelte';
 	import DashboardDemo from '$lib/product-demos/dashboard/DashboardDemo.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
+	import { APP_ORIGIN, appLoginUrl, appSignupUrl } from '$lib/marketing/app.js';
+
+	const appHost = APP_ORIGIN.replace(/^https:\/\//, '');
 </script>
 
 <section class="relative overflow-hidden hq-atmosphere hq-grain">
@@ -23,20 +26,26 @@
 			</p>
 			<div class="mt-8 flex flex-wrap items-center gap-3">
 				<Button
-					href="#pricing"
+					href={appSignupUrl}
 					size="lg"
 					class="bg-hq-accent-strong text-white hover:bg-hq-accent rounded-full px-6"
 				>
-					See pricing
+					Sign up
 				</Button>
 				<Button
-					href="#playbooks"
+					href={appLoginUrl}
 					variant="outline"
 					size="lg"
 					class="border-hq-ink/20 text-hq-ink hover:bg-hq-paper-deep rounded-full px-6"
 				>
-					See playbooks
+					Log in
 				</Button>
+				<a
+					href="#pricing"
+					class="text-hq-muted hover:text-hq-ink text-sm font-medium underline-offset-4 hover:underline"
+				>
+					See pricing
+				</a>
 			</div>
 		</div>
 
@@ -45,7 +54,8 @@
 				<DashboardDemo />
 			</ProductFrame>
 			<p class="text-hq-muted mt-4 text-center text-xs sm:text-left">
-				Click tasks to tick them off — same home view you’d open every morning.
+				Click tasks to tick them off — same home view you’d open every morning at
+				{appHost}.
 			</p>
 		</div>
 	</div>

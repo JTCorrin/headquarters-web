@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import { appLoginUrl, appSignupUrl } from '$lib/marketing/app.js';
 </script>
 
 <footer class="border-hq-line border-t bg-hq-ink text-hq-paper">
@@ -7,8 +8,8 @@
 		<div>
 			<p class="font-display text-2xl font-semibold tracking-tight">Headquarters</p>
 			<p class="mt-3 max-w-xs text-sm leading-relaxed text-white/65">
-				Source-available command room for founders and small teams — pipeline, inbox, money, and
-				playbooks.
+				Source-available command room for founders and small teams — pipeline, inbox, mail-shots,
+				money, and playbooks.
 			</p>
 		</div>
 		<div>
@@ -16,6 +17,7 @@
 			<ul class="mt-3 space-y-2 text-sm text-white/75">
 				<li><a href={resolve('/#playbooks')} class="hover:text-white">Playbooks</a></li>
 				<li><a href={resolve('/#pipeline')} class="hover:text-white">Pipeline</a></li>
+				<li><a href={resolve('/#campaigns')} class="hover:text-white">Mail-shots</a></li>
 				<li><a href={resolve('/#mcp')} class="hover:text-white">MCP agents</a></li>
 				<li><a href={resolve('/#pricing')} class="hover:text-white">Pricing</a></li>
 				<li><a href={resolve('/docs')} class="hover:text-white">Docs</a></li>
@@ -24,7 +26,8 @@
 		<div>
 			<p class="text-xs font-semibold tracking-[0.16em] text-white/45 uppercase">Company</p>
 			<ul class="mt-3 space-y-2 text-sm text-white/75">
-				<li><a href={resolve('/#waitlist')} class="hover:text-white">Get started</a></li>
+				<li><a href={appSignupUrl} class="hover:text-white">Sign up</a></li>
+				<li><a href={appLoginUrl} class="hover:text-white">Log in</a></li>
 				<li>
 					<a
 						href="https://github.com/JTCorrin/Headquarters"

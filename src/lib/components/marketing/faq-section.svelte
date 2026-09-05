@@ -21,8 +21,16 @@
 			a: 'A visual automation — triggers, waits, emails, tasks, notes — so follow-ups don’t live only in your head when you’re heads-down delivering.'
 		},
 		{
+			q: 'What are mail-shot campaigns?',
+			a: 'One-off (or scheduled) sends to people who share selected tags — leads, contacts, and clients. Preview sendable vs skipped, pick a template and mailbox, then launch. Different from playbooks, which run ongoing chase sequences.'
+		},
+		{
 			q: 'Can AI agents use Headquarters?',
-			a: 'Yes. An org-scoped MCP server at /api/v1/mcp lets agents in Cursor, Claude Desktop, Buzz, and similar hosts work contacts, pipeline, projects, quotes, invoices, and payments with the same API-key permissions as scripts.'
+			a: 'Yes. An org-scoped MCP server at /api/v1/mcp lets agents in Cursor, Claude Desktop, Buzz, and similar hosts work contacts, pipeline, projects, quotes, invoices, payments, and campaigns with the same API-key permissions as scripts.'
+		},
+		{
+			q: 'Where do I log in?',
+			a: 'The hosted app is at app.headquarters-crm.com — use Sign up or Log in there. This marketing site is for pricing, docs, and product overview.'
 		},
 		{
 			q: 'Can I start alone and add seats later?',

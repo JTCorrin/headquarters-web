@@ -3,6 +3,7 @@
 	import { resolve } from '$app/paths';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { cn } from '$lib/utils.js';
+	import { appLoginUrl } from '$lib/marketing/app.js';
 
 	const githubRepo = 'https://github.com/JTCorrin/Headquarters';
 	const billingApiUrl = $derived((env.PUBLIC_BILLING_API_URL ?? '').replace(/\/$/, ''));
@@ -134,6 +135,12 @@
 						>
 							{checkoutBusy ? 'Redirecting…' : tier.cta}
 						</Button>
+						<a
+							href={appLoginUrl}
+							class="text-hq-muted hover:text-hq-ink mt-3 block text-center text-sm underline-offset-4 hover:underline"
+						>
+							Log in to the app
+						</a>
 					{/if}
 				</article>
 			{/each}

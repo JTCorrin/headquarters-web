@@ -37,6 +37,7 @@ Interactive UI under `src/lib/product-demos/`:
 | Playbook graph | `playbook/PlaybookDemo.svelte` (ported from CRM canvas) |
 | Pipeline | `pipeline/PipelineDemo.svelte` |
 | Email + AI draft | `email/EmailDemo.svelte` |
+| Campaigns / mail-shots | `campaigns/CampaignDemo.svelte` |
 | Timeline | `timeline/TimelineDemo.svelte` |
 | Quotes / invoices | `money/QuoteInvoiceDemo.svelte` |
 
@@ -53,6 +54,8 @@ To refresh the playbook canvas from the CRM app, copy from `crm-project`:
 
 - **Self-host** — free, source-available (Elastic License 2.0) → `/docs`
 - **Hosted** — £10 / license / month (3 seats included, £3 / seat after) → Stripe Checkout via billing API
+
+**Product app** (login / signup / CRM): https://app.headquarters-crm.com
 
 Set `PUBLIC_BILLING_API_URL` (see `.env.example`) to the Railway `headquarters-billing` origin.
 Stripe catalog lives on the **Corrin AI** Stripe account (`Headquarters Hosted` / `hq_hosted_monthly`).
