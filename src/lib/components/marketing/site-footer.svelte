@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { appLoginUrl, appSignupUrl } from '$lib/marketing/app.js';
+	import { appLoginUrl } from '$lib/marketing/app.js';
 </script>
 
-<footer class="border-hq-line border-t bg-hq-ink text-hq-paper">
+<footer class="border-t border-hq-line bg-hq-ink text-hq-paper">
 	<div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
 		<div>
 			<p class="font-display text-2xl font-semibold tracking-tight">Headquarters</p>
@@ -26,8 +26,11 @@
 		<div>
 			<p class="text-xs font-semibold tracking-[0.16em] text-white/45 uppercase">Company</p>
 			<ul class="mt-3 space-y-2 text-sm text-white/75">
-				<li><a href={appSignupUrl} class="hover:text-white">Sign up</a></li>
-				<li><a href={appLoginUrl} class="hover:text-white">Log in</a></li>
+				<li><a href={resolve('/#pricing')} class="hover:text-white">Start hosted</a></li>
+				<li>
+					<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external app origin -->
+					<a href={appLoginUrl} class="hover:text-white">Log in</a>
+				</li>
 				<li>
 					<a
 						href="https://github.com/JTCorrin/Headquarters"
@@ -47,7 +50,7 @@
 		</div>
 	</div>
 	<div class="border-t border-white/10">
-		<p class="text-hq-muted mx-auto max-w-7xl px-4 py-5 text-xs text-white/45 sm:px-6">
+		<p class="mx-auto max-w-7xl px-4 py-5 text-xs text-hq-muted text-white/45 sm:px-6">
 			© {new Date().getFullYear()} Headquarters. All rights reserved.
 		</p>
 	</div>

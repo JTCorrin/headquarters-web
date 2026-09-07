@@ -32,14 +32,14 @@ Static adapter (`@sveltejs/adapter-static`) with prerendered routes.
 
 Interactive UI under `src/lib/product-demos/`:
 
-| Demo | Path |
-|------|------|
-| Playbook graph | `playbook/PlaybookDemo.svelte` (ported from CRM canvas) |
-| Pipeline | `pipeline/PipelineDemo.svelte` |
-| Email + AI draft | `email/EmailDemo.svelte` |
-| Campaigns / mail-shots | `campaigns/CampaignDemo.svelte` |
-| Timeline | `timeline/TimelineDemo.svelte` |
-| Quotes / invoices | `money/QuoteInvoiceDemo.svelte` |
+| Demo                   | Path                                                    |
+| ---------------------- | ------------------------------------------------------- |
+| Playbook graph         | `playbook/PlaybookDemo.svelte` (ported from CRM canvas) |
+| Pipeline               | `pipeline/PipelineDemo.svelte`                          |
+| Email + AI draft       | `email/EmailDemo.svelte`                                |
+| Campaigns / mail-shots | `campaigns/CampaignDemo.svelte`                         |
+| Timeline               | `timeline/TimelineDemo.svelte`                          |
+| Quotes / invoices      | `money/QuoteInvoiceDemo.svelte`                         |
 
 To refresh the playbook canvas from the CRM app, copy from `crm-project`:
 
@@ -53,7 +53,7 @@ To refresh the playbook canvas from the CRM app, copy from `crm-project`:
 ## Pricing (marketing copy)
 
 - **Self-host** — free, source-available (Elastic License 2.0) → `/docs`
-- **Hosted** — £10 / license / month (3 seats included, £3 / seat after) → Stripe Checkout via billing API
+- **Hosted** — £10 / organisation / month (up to 3 seats; additional seats are not currently offered) → Stripe Checkout via billing API
 
 **Product app** (login / signup / CRM): https://app.headquarters-crm.com
 

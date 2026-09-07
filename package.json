@@ -11,7 +11,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"test": "playwright test"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
@@ -20,6 +21,7 @@
 		"@fontsource-variable/syne": "^5.3.0",
 		"@internationalized/date": "^3.12.3",
 		"@lucide/svelte": "^1.31.0",
+		"@playwright/test": "^1.63.0",
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.63.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
@@ -52,5 +54,6 @@
 	"dependencies": {
 		"@svar-ui/svelte-kanban": "^2.6.0",
 		"@xyflow/svelte": "^1.6.2"
-	}
+	},
+	"packageManager": "pnpm@10.34.5"
 }
