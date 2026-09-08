@@ -26,6 +26,7 @@
 		<div>
 			<p class="text-xs font-semibold tracking-[0.16em] text-white/45 uppercase">Company</p>
 			<ul class="mt-3 space-y-2 text-sm text-white/75">
+				<li><a href="mailto:hq@corrin.ai" class="hover:text-white">Support — hq@corrin.ai</a></li>
 				<li><a href={resolve('/#pricing')} class="hover:text-white">Start hosted</a></li>
 				<li>
 					<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external app origin -->
@@ -44,8 +45,8 @@
 		<div>
 			<p class="text-xs font-semibold tracking-[0.16em] text-white/45 uppercase">Legal</p>
 			<ul class="mt-3 space-y-2 text-sm text-white/75">
-				<li><span class="text-white/40">Privacy — soon</span></li>
-				<li><span class="text-white/40">Terms — soon</span></li>
+				<li><a href={resolve('/privacy')} class="hover:text-white">Privacy</a></li>
+				<li><a href={resolve('/terms')} class="hover:text-white">Terms</a></li>
 			</ul>
 		</div>
 	</div>

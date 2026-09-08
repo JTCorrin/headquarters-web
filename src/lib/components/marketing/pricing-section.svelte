@@ -135,12 +135,19 @@
 						>
 							{checkoutBusy ? 'Redirecting…' : tier.cta}
 						</Button>
+						<p class="mt-3 text-center text-xs leading-relaxed text-hq-muted">
+							By purchasing, you agree to our <a href={resolve('/terms')} class="underline">Terms</a
+							>. See our <a href={resolve('/privacy')} class="underline">Privacy notice</a> for how we
+							handle data.
+						</p>
+						<!-- eslint-disable svelte/no-navigation-without-resolve -- external hosted app origin -->
 						<a
 							href={appLoginUrl}
 							class="mt-3 block text-center text-sm text-hq-muted underline-offset-4 hover:text-hq-ink hover:underline"
 						>
 							Log in to the app
 						</a>
+						<!-- eslint-enable svelte/no-navigation-without-resolve -->
 					{/if}
 				</article>
 			{/each}
